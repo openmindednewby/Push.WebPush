@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>Push.WebPush</RootNamespace>
+    <PackageId>Push.WebPush</PackageId>
+    <Description>Self-hosted Web Push (VAPID) provider for .NET. Sends browser push notifications directly to the browser vendor's push gateway using a VAPID keypair you own — no Firebase/FCM, no third-party service. Per-subscription delivery results with expired-subscription (404/410) detection for pruning.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lib.Net.Http.WebPush" Version="3.3.1" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>
